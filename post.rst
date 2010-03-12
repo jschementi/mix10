@@ -1,3 +1,7 @@
+=================================================
+Pumping Iron on the Web - IronRuby and IronPython
+=================================================
+
 Welcome to “Pumping Iron” on the web! I’m Jimmy Schementi, program manager of
 IronRuby and IronPython at Microsoft, lead dev on “Gestalt” – the Silverlight
 DLR integration, as well as everything else web-related with the “Iron” languages.
@@ -129,19 +133,9 @@ Allowing others to extend your applications will make it more powerful
 
 **Does this simplify .NET development and open it up to a broader audience?**
 
-1. Crisis
 
-   Web developers move to other platforms for simpler programming models
-
-2. Solution
-
-   Embrace the dynamic languages to make .NET web-development better for everyone
-
-3. Climax
-
-   Simplify .NET web-development with dynamic languages
-
-4. Resolution
-
-   Dynamic languages - in the browser and on the server
+- Web developers move to other platforms for simpler programming models
+- Embrace the dynamic languages to make .NET web-development better for everyone
+- Simplify .NET web-development with dynamic languages
+- Dynamic languages - in the browser and on the server
 
