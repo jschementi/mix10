@@ -54,7 +54,7 @@ ACT II
 Numbered items: *Why* they should do the solution
 Lettered items: *How* do they adopt the solution
 
-1. Focusing on what you care about helps you get stuff done (why)
+1. Making your entire web-development experience simpler (why)
    
    - Web-apps can be built from scratch using Ruby or Python; both server and client components
 
@@ -71,7 +71,7 @@ Lettered items: *How* do they adopt the solution
            - the HTML DOM (photoviewer)
            - and the browser's JavaScript engine
 
-2. Simplifying your current systems (why)
+2. Static languages still have to deal with dynamic environments (why)
 
    - Can seamlessly interoperate with existing .NET code (written in C#/VB/Boo)
    - You don't have to start from scratch to use these languages today; they support using their engines from existing .NET code-bases
@@ -89,6 +89,12 @@ Lettered items: *How* do they adopt the solution
       iii. Embedding into your own applications for dealing with dynamic data (polyglot)
 
 3. Allowing others to extend your applications will make it more powerful (why)
+
+   a. Public extensibility -- basically building a platform for end-users
+      - Facebook
+   
+   b. Extensibility for yourself
+      - 
 
 4. Does this simplify .NET development and open it up to a broader audience?
 
@@ -114,10 +120,16 @@ ACT III
    Dynamic languages - in the browser and on the server
 
 
-
 ============
 Random notes
 ============
+
+FAQ
+---
+
+What console are you using?
+    
+    Console2
 
 
 Average audience member
