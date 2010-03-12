@@ -18,7 +18,7 @@ Server-side: IIS
 
      Ruby itself has very simple syntax, and web-frameworks have been built
      to make web-development really simple. For example, Sinatra is a mini-web-framework
-     made to minimize the amount of code required to respond to web requests:
+     made to minimize the amount of code required to respond to web requests::
  
          get '/' do
            "Hello, World"
@@ -31,7 +31,7 @@ Server-side: IIS
      (any VB fans out there?). The do-end block is syntactic sugar around passing
      a lambda as the last-argument to the "get" method; all Ruby methods take
      an arbitrary "block" of code between do-end or {} (yes, curly braces 
-     for all those C# fans ... it could have been written like this):
+     for all those C# fans ... it could have been written like this)::
  
          get('/') {
            "hello world"
@@ -42,7 +42,7 @@ Server-side: IIS
      is implicitly the return value of the method.
  
      Though these features sound kinda arbitrary by themselves, if I were to
-     write this with non-Ruby language features, it would lose it's character:
+     write this with non-Ruby language features, it would lose it's character::
  
          def index()
            return "Hello, World"
@@ -56,7 +56,7 @@ Server-side: IIS
      language tackles problems, it's not how the programmer thinks.
  
      Now, not to leave Python out of this love-fest, Python can make this
-     look very pretty as well, but in her own special way:
+     look very pretty as well, but in her own special way::
      
          @get("/")
          def index(resp):
@@ -71,7 +71,7 @@ Server-side: IIS
  
      A decorator in Python is basically a function that accepts a
      function and returns a function, so get in this case would be
-     defined something like this:
+     defined something like this::
      
          def get(uri):
            def __get(resp):
@@ -81,7 +81,7 @@ Server-side: IIS
      That's code that would be part of my fictional Python Sinatra fx,
      not something you as the consumer would write.
        
-     Another way of looking at it is without decorator:
+     Another way of looking at it is without decorator::
  
          def index(resp):
              resp.write("Hello, World")
@@ -109,7 +109,7 @@ Server-side: IIS
      which is just a collection of libraries for structuring your
      web-application, and Ruby gives it the power to make it so nice.
      Rails uses the Model-View-Controller pattern for organization,
-     so any ASP.NET MVC people will find this familiar:
+     so any ASP.NET MVC people will find this familiar::
 
          class PostsController < ActionController::Base
            def index
@@ -140,7 +140,7 @@ Server-side: IIS
      While this is very nice, Rails really shines when it comes to
      interacting with the database through it's ActiveRecord library.
      ActiveRecord maps Ruby classes to database tables, and provides
-     an Ruby API for interacting with the database
+     an Ruby API for interacting with the database::
 
          class Post < ActiveRecord::Base
            has_many :comments
@@ -225,7 +225,7 @@ Server-side: IIS
     IronPython directly integrates with ASP.NET as well, letting you write
     your ASPX code-behind files in Python.
 
-    hello-webforms.aspx:
+    hello-webforms.aspx::
 
         <%@ Page Language="IronPython" CodeFile="hello-webforms.aspx.py" %>
         Enter your name:
@@ -237,7 +237,7 @@ Server-side: IIS
             </asp:Label>
         </p>
 
-    hello-webforms.aspx.py:
+    hello-webforms.aspx.py::
 
         def Page_Load(sender, e):
             if not IsPostBack:   
@@ -264,7 +264,7 @@ Server-side: IIS
 
     <TODO PHP-like code>
 
-    It can also interact with the controls:
+    It can also interact with the controls::
 
         <asp:Repeater ID="ThumbnailList" runat="server">
           <ItemTemplate>
@@ -294,7 +294,7 @@ Server-side: IIS
   The common scenario of a header + body + footer is actually really nice
   in Ruby:
 
-  template.erb
+  template.erb::
 
       <h1>My Site / <%= page %></h1>
       <%= yield %>
@@ -302,19 +302,19 @@ Server-side: IIS
         &copy; Jimmy Schementi
       </p>
 
-  index.erb
+  index.erb::
     
       <h2>Welcome</h2>
       <% 10.times do %>
         Welcome
       <% end %>!
 
-  about.erb
+  about.erb::
 
       <h2>About Me</h2>
       <p>Blah blah blah ...</p>
     
-  gen.rb
+  gen.rb::
 
       template = ARGV[0] || 'template.erb'
       files = ARGV[1..-1]
@@ -342,7 +342,7 @@ Client-side: Silverlight
      Silverlight application. This is not only because of how expressive the
      programming languages are; the integration with Silverlight doesn't fight
      how the web works. For example, here's an entire Silverlight app
-     which just writes a message into the HTML page, written in Python:
+     which just writes a message into the HTML page, written in Python::
 
          <html>
            <head>
@@ -361,11 +361,13 @@ Client-side: Silverlight
      in other languages than JavaScript, but in a way that works cross-
      browser and cross-platform; the languages work in Moonlight as well.
 
-     Both inline and script-src tags are supported:
+     Both inline and script-src tags are supported::
 
          <script type="text/ruby" src="foo.rb"></script>
 
   b. Console
+
+     ::
 
          Say hi to <input id="name" type="textbox" /><input id="go" type="button" value="Go!" />
          <div id="message"></div>
@@ -379,7 +381,7 @@ Client-side: Silverlight
 
      The example above created a 1x1 pixel Silverlight control on the page;
      by default the HTML-page is the default UI. However, you can use Silverlight's
-     graphics as well by using script tags:
+     graphics as well by using script tags::
 
          <script type="application/xml+xaml" id="xaml1" width="100" height="100">
            <Canvas>
@@ -396,7 +398,7 @@ Client-side: Silverlight
      Let's take that say-hello example from before, and make the visualization
      a bit prettier. So, instead of writing the message to the HTML page, let's
      load a nice graphic and talk-bubble animation, created in Adobe Illustrator,
-     and exported into XAML.
+     and exported into XAML::
 
          Say hi to <input id="name" type="textbox" /><input id="go" type="button" value="Go!" />
          <script type="application/xml+xaml" src="mushroom.xaml" id="xaml1" width="100" height="100"></script>
@@ -408,6 +410,8 @@ Client-side: Silverlight
 
      Also, there's an blinking animation defined in the XAML, but if has to be
      initiated from code; let's do that from Python, because we can =)
+
+     ::
 
          <script type="application/python" class="xaml1">
              xaml1.blink_animation.Start()
@@ -460,7 +464,7 @@ Client-side: Silverlight
      fractal bitmap generation, that is computed using C#. Calling into the C#
      code from IronPython is very simple; just add a reference to the DLL,
      import the namespace just like it's a Python module, and use classes/methods
-     using Python's syntax:
+     using Python's syntax::
 
          import clr
          clr.AddReferenceToFile("bin/mandelbrotbase.dll")
@@ -487,7 +491,7 @@ Client-side: Silverlight
      mandelbrot bitmap, also showing that IronPython can work directly with
      Silverlight APIs, and not just user-code. Another useful feature of
      WritableBitmap is being able to attach any bitmap-producing stream,
-     like a Webcam, and doing that from a dynamic language is trivial:
+     like a Webcam, and doing that from a dynamic language is trivial::
 
          vidBrush = VideoBrush()
          vidBrush.SetSource(_CaptureSource)
@@ -501,7 +505,7 @@ Client-side: Silverlight
      into the .NET framework, giving you the best of both words: tremendously
      powerful .NET libraries and expressive scripting languages.
 
-     Here's the webcam demo that Tim Heurer put together:
+     Here's the webcam demo that Tim Heurer put together ...
 
      <show webcam>
 
@@ -527,7 +531,7 @@ Client-side: Silverlight
      Also, because Ruby has an existing standard library (written in Ruby), that
      resource also becomes available in Silverlight. That ERB library we used
      to template HTML on the server can also be used to template HTML on the
-     client:
+     client::
 
          <% if @flickr.stat == "ok" && @flickr.photos.total.to_i > 0 %>
            <div class='images'>
@@ -550,13 +554,13 @@ Client-side: Silverlight
      all your JavaScript code and start over; they can be used together. For example,
      the photoviewer uses a JavaScript library called "lightbox" to display the large
      version of each image when clicked on. And that library can be set up
-     directly from Ruby:
+     directly from Ruby::
 
          if document.overlay && document.lightbox
            document.overlay.parent.remove_child document.overlay
            document.lightbox.parent.remove_child document.lightbox
          end
-       
+
          window.eval "initLightbox()"
 
 
@@ -584,7 +588,7 @@ maintain the test suite. =)
   a. Roll-your-own test fx, and more Ruby DSL explorations
 
      Before looking at how to test web-app, let's take a brief look at what a 
-     test written with RSpec, and popular Ruby testing framework, looks like:
+     test written with RSpec, and popular Ruby testing framework, looks like::
 
          describe '.NET Stack instantiation' do
            it 'can create an empty stack' do
@@ -602,7 +606,7 @@ maintain the test suite. =)
 
      Note: there are Ruby testing frameworks that look a bit more like what you
      might be used to. The following is an equivalent test written with test/unit,
-     and this will give you a better idea of the structure of the above example:
+     and this will give you a better idea of the structure of the above example::
 
          class DotNetStackInstantiation < Test::Unit::TestCase
            def test_creating_empty_stack
@@ -631,7 +635,7 @@ maintain the test suite. =)
      The crazy thing is how little code is required to make that work; 26 lines of
      Ruby. The key points are that "yield" executes the do-end block passed to 
      a method, and the "should" method is added to every object, turning 
-     any subsequent methods calls into an assertion.
+     any subsequent methods calls into an assertion::
 
          def describe string
            puts string
@@ -756,7 +760,7 @@ imagine to think up other cool use-cases.
 
      <add IronPython.dll and Microsoft.Scripting.dll>
 
-     Then you can write the 5 lines of code to get this all working:
+     Then you can write the 5 lines of code to get this all working::
 
          var runtime = ScriptRuntime.CreateFromConfiguration();
          var engine = runtime.GetEngine("IronPython");
@@ -793,7 +797,7 @@ imagine to think up other cool use-cases.
 
   Slight aside: since these APIs are .NET based, the dynamic languages themselves,
   can consume them to run other dynamic languages! =) For example, here's Ruby
-  executing Python code:
+  executing Python code::
 
       require 'IronPython'
       require 'Microsoft.Scripting'
@@ -813,13 +817,13 @@ imagine to think up other cool use-cases.
   What's also interesting is the dynamic languages can communicate between
   eachother just as easily; here's Ruby calling Python code:
 
-  foo.py
+  foo.py::
       
       class Foo(object):
           def bar(self):
               print 'Look ma, white-space-sensitivity!'
 
-  bar.rb
+  bar.rb::
 
       foo_module = IronRuby.require 'foo'
       foo_module.foo.bar
