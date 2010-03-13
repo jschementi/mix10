@@ -23,7 +23,6 @@ state of these languages.
 Outline
 -------
 
-+++++
 ACT I
 +++++
 
@@ -50,7 +49,6 @@ ACT I
    Embrace the dynamic languages to make .NET web-development better for everyone
    
 
-++++++
 ACT II
 ++++++
 *Develop the action*
@@ -63,17 +61,13 @@ Lettered items: *How* do they adopt the solution
    - Web-apps can be built from scratch using Ruby or Python; both server and client components
 
    a. Both Ruby and Python can run on the same infrastructure as your ASP.NET solutions (how)
-      i.   Existing Ruby web-frameworks on IIS (Rails/Sintra + ironruby.rack)
-      ii.  Using ASP.NET directly with and IronPython and IronRuby (MerlinWeb + ASP.NET MVC)
+      i. Existing Ruby web-frameworks on IIS (Rails/Sintra + ironruby.rack)
+      ii. Using ASP.NET directly with and IronPython and IronRuby (MerlinWeb + ASP.NET MVC)
       iii. Help make very simple PHP-like websites (ERB/HAML/SASS/Less on IIS)
 
    b. Writing browser applications (Silverlight) in Ruby and Python is extremely powerful (how)
-      i.   Managed code in HTML-script tags (app-model tour)
-      ii.  Interop everywhere: 
-           - Use all existing Silverlight APIs (webcam)
-           - interop with user-C# code (mandelbrot example)
-           - the HTML DOM (photoviewer)
-           - and the browser's JavaScript engine
+      i. Managed code in HTML-script tags (app-model tour)
+      ii. Interop everywhere 
 
 2. Static languages still have to deal with dynamic environments (why)
 
@@ -83,13 +77,13 @@ Lettered items: *How* do they adopt the solution
    - or write it in a C# app and call into dynamic language when you need more dynamic behavior.
 
    a. Test your applications with with Ruby or Python (how)
-      i.   Ruby's DSL-abilities Testing with Ruby intro (bacon or roll-your-own)
-      ii.  Test server-side web applications - scrape.py, Watir, or SL
+      i. Ruby's DSL-abilities Testing with Ruby intro (bacon or roll-your-own)
+      ii. Test server-side web applications - scrape.py, Watir, or SL
       iii. Test your Silverlight application
 
    b. Using scripting languages in existing C#-based web-applications (how)
-      i.   DLR Hosting 101 (include "dynamic")
-      ii.  It's all hosting
+      i. DLR Hosting 101 (include "dynamic")
+      ii. It's all hosting
       iii. Embedding into your own applications for dealing with dynamic data (polyglot)
 
 3. Allowing others to extend your applications will make it more powerful (why)
@@ -103,7 +97,6 @@ Lettered items: *How* do they adopt the solution
 4. Does this simplify .NET development and open it up to a broader audience?
 
 
-+++++++
 ACT III
 +++++++
 
@@ -932,7 +925,7 @@ of what scripts could be used for:
 - An advanced search / filter
 - High-level business logic
   o computing prices of items, applying discounts, etc
-    - any type of rules engine; system changes behavior based on external data
+  o any type of rules engine; system changes behavior based on external data
 - Customizing a single codebase for different clients
 - Add-ons for end-users to make your application better
   o Facebook
@@ -1106,25 +1099,6 @@ Why do .NET developers care
 - Embedding (polyglot)
 - Application development/productivity
 
-
-It's all embedding
-++++++++++++++++++
-- These languages are built *on* .NET; today C#/VB are not ... the compile .NET programs.
-- Therefore, dynamic languages are different in that they need to run in a .NET application
-- So, all Ruby or Python code runs by hosting the languages inside a .NET application
-- We do things to make this seamless in specific environments
-  o ir.exe/ipy.exe: .NET programs which host the language and run the code in a command-line
-  o ipyw.exe: runs scripts in a console-less program for Windows applications.
-  o Microsoft.Scripting.Silverlight.dll: entry-point for Silverlight applications which
-    runs script tags and scripts inside the XAP
-  o IronRuby.Rack: runs rack-based applications on IIS
-  o Microsoft.Web.Scripting.dll: runs code against ASP.NET
-  o Microsoft.Mvc.Scripting.dll: runs code against ASP.NET MVC
-- However, we can't provide "runners" for every environment that will spring up,
-  so we allow you to use the same APIs that these runners use in your own apps.
-- What this can enable?
-
-
 Scripting or Dynamic
 ++++++++++++++++++++
 This word just gives me a bad taste anytime I hear it; scripts generally sound
@@ -1149,26 +1123,24 @@ doing that type of expensive computation.
 
 Open questions
 ++++++++++++++
-- Motif: pumping iron
-  o Arnold Schwarzenegger
-    - California governor
-    - losing money
-    - Accent
-      ~ Conan O'Brien making fun of him
-    - Terminator
-  o IRON: it runs on .net or implementation running on .net
-  o Working out
-  o getting fit, lean, quick, fast
-  o http://www.funnyanimalsite.com/pictures/Lions_Working_Out.jpg
-  o Yoga
-  o Atomic symbol Fe
-  o IronMan
-  o Ironing - smoothing out
-  o bridges
-  o sword, crosses
-  o skillet, waffelmaker
-    - http://www.treehugger.com/files/2007/05/my_type_of_appl.php
-  o Iron Maiden
-  o Iron Sea
-  
+Arnold Schwarzenegger
+California governor
+losing money
+Accent
+Conan O'Brien making fun of him
+Terminator
+IRON: it runs on .net or implementation running on .net
+Working out
+getting fit, lean, quick, fast
+http://www.funnyanimalsite.com/pictures/Lions_Working_Out.jpg
+Yoga
+Atomic symbol Fe
+IronMan
+Ironing - smoothing out
+bridges
+sword, crosses
+skillet, waffelmaker
+http://www.treehugger.com/files/2007/05/my_type_of_appl.php
+Iron Maiden
+Iron Sea
 Working out, exercising, learning new things, staying sharp
