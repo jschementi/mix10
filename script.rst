@@ -37,19 +37,19 @@ ACT I
 
 2. Protagonist (who are we in this setting)
 
-   Web developers on the .NET platform who want to get things done
+   .NET web developers who want to get things done
 
 3. Imbalance (why are we here)
 
-   Web developers move to other platforms for simpler programming models, rather than using the "enterprizy" tools
+   Lack of language choice limits productivity
 
 4. Balance (what do we want to do see happen)
 
-   Simplify .NET web development and make it relevant to a broader audience
+   Make getting things done simpler and more focused
 
 5. Solution (how do we get there from here)
 
-   Embrace the dynamic languages to make .NET web-development better for everyone
+   Embrace the dynamic languages
    
 
 ACT II
@@ -105,19 +105,20 @@ ACT III
 
 1. Crisis
 
-   Web developers move to other platforms for simpler programming models
+   Lack of language choice limits productivity
    
 2. Solution
 
-   Embrace the dynamic languages to make .NET web-development better for everyone
+   Embrace the dynamic languages 
 
 3. Climax
 
-   Simplify .NET web-development with dynamic languages
+   Make getting things done simpler and more focused
 
 4. Resolution
 
    Dynamic languages - in the browser and on the server
+   How will you get things done?
 
 
 ------------
@@ -1007,6 +1008,8 @@ TODO!
 
 
 
+
+
 ------------
 Random notes
 ------------
@@ -1018,60 +1021,6 @@ What console are you using?
     
     Console2
 
-
-Average audience member
-+++++++++++++++++++++++
-
-- What do we know about this person? How do they make decisions?
-  o .NET developer, probably C#. Maybe VB if background is VB6 and before.
-  o Designer interested in simple coding
-  o Asks self question: "can I use it from Visual Studio?"
-
-- What is the audience's problem?
-
-  o Will ask: What is in this for me? Why do you think this is important for me? Why should I care?
-    - increased productivity
-    - way to get simple things done
-    - simplify your current solutions
-    - give others an easy way of customizing your work
-  
-- Collages
-  o Where?
-  o When?
-  o Who?
-  o What?
-  o Why?
-  o How?
-
-
-Concepts
-++++++++
-
-- Both languages are compliant implementations
-- web-apps can be built from scratch using Ruby or Python; both server
-  and client components.
-- Can even be used to simplify writing web-apps
-- can seamlessly interoperate with existing .NET code (written in C#/VB/Boo).
-- you don't have to start from scratch to use these languages today;
-  they support using their engines from existing .NET code-bases.
-
-
-Technologies
-++++++++++++
-
-- Silverlight: Ruby and Python in the browser
-- ASP.NET MVC with IronRuby
-- IronRuby.Rack
-- ASP.NET with IronPython
-- ERb/Haml/Sass/Less in IIS (PHP+)
-
-
-Why do .NET developers care
-+++++++++++++++++++++++++++
-- Testing
-- Scripting (end-user extension)
-- Embedding (polyglot)
-- Application development/productivity
 
 Scripting or Dynamic
 ++++++++++++++++++++
@@ -1090,31 +1039,20 @@ solutions.
 
 Today, "scripting" languages are actually powerful, expressive, and performant.
 I personally separate "scripting" and "dynamic" languages; "scripting" languages
-are like batch/bash/tcl, while "dynamic" just 
-Granted, C# will compute a fractal faster than Python, but you're not always
-doing that type of expensive computation. 
-
+are like batch/bash/tcl, while "dynamic" languages like python/ruby.
 
 Open questions
 ++++++++++++++
-Arnold Schwarzenegger
-California governor
-losing money
-Accent
-Conan O'Brien making fun of him
-Terminator
-IRON: it runs on .net or implementation running on .net
-Working out
-getting fit, lean, quick, fast
-http://www.funnyanimalsite.com/pictures/Lions_Working_Out.jpg
-Yoga
-Atomic symbol Fe
-IronMan
-Ironing - smoothing out
-bridges
-sword, crosses
-skillet, waffelmaker
-http://www.treehugger.com/files/2007/05/my_type_of_appl.php
-Iron Maiden
-Iron Sea
-Working out, exercising, learning new things, staying sharp
+- Extending the motif "Pumping Iron"
+  + Working out
+  + getting fit, lean, quick, fast
+  + exercising, learning new things, staying sharp
+  + http://www.funnyanimalsite.com/pictures/Lions_Working_Out.jpg
+  + Yoga
+  + Atomic symbol Fe
+  + IronMan
+  + Ironing - smoothing out
+  + bridges
+  + sword, crosses
+  + http://www.treehugger.com/files/2007/05/my_type_of_appl.php
+  + Iron Maiden
