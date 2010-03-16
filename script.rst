@@ -135,8 +135,8 @@ and even in your existing applications.
 as saying "Iron" stands for different acronyms; "Implementation running on .NET"
 and "It runs on .NET", respectively. Officially, it's Jim's definition, as he
 stated that at a PDC talk, and he chose the name for IronPython. A 
-`Port 25 <http://port25.technet.com/archive/2006/06/01/2565.aspx>`_
-interview explains more, but I should just put this on the websites and put the
+`StackOverflow <http://stackoverflow.com/questions/1194309/why-are-many-ports-of-languages-to-net-prefixed-with-iron>`_
+post explains more, but I should just put this on the websites and put the
 wondering to rest ...
 
 Anyway, let's really get started. Like I said, this entire talk is about the why
@@ -179,21 +179,17 @@ it? I'll discuss making your entire web-development experience simpler, focusing
 on specific pieces of your application where things are just dynamic, and lastly
 the benefits opening up your applications to extensibility brings.
 
-
-
-
 ----------------------------------------------
 Application development with dynamic languages
 ----------------------------------------------
-
 Ruby and Python can be used both on IIS as well as in Silverlight to build apps
-from start to finish; let's first look at the server. Both languages can run on
-the same infrastructure as your ASP.NET apps, making deploying them no different
-than any other ASP.NET app.
+from start to finish; let's first look at the server.
 
-Because IronRuby is a highly-compatible implementation of the Ruby language, it
-is able to run applications written with the "Ruby on Rails" web-framework, and
-also supports deploying on IIS.
+Both languages can run on the same infrastructure as your ASP.NET apps, making
+deploying them no different than any other ASP.NET app. And, because IronRuby
+is a highly-compatible implementation of the Ruby language, it is able to run
+applications written with the "Ruby on Rails" web-framework, and also supports
+deploying on IIS.
 
 Server-side: IIS
 ++++++++++++++++
@@ -202,8 +198,9 @@ Server-side: IIS
 Sinatra + Ruby/Python 101
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 Ruby itself has very simple syntax, and web-frameworks have been built
-to make web-development really simple. For example, Sinatra is a mini-web-framework
-made to minimize the amount of code required to respond to web requests::
+to make web-development really simple. For example, Sinatra is a 
+mini-web-framework made to minimize the amount of code required to respond to 
+web requests::
 
     get '/' do
       "Hello, World"
@@ -259,9 +256,9 @@ function and returns a function, so get in this case would be
 defined something like this::
 
     def get(uri):
-      def __get(resp):
-        sinatra.register('get', uri, resp)
-      return __get
+      def __get(func):
+        sinatra.register('get', uri, func)
+        return func
 
 That's code that would be part of my fictional Python Sinatra fx,
 not something you as the consumer would write.
@@ -859,7 +856,7 @@ a web-request to your server, and testing what it sends back. Even better,
 there are libraries for controlling individual browsers with Ruby, so you can
 make sure your applications work across them.
 
-TODO!!!
+TODO (either scrape.py or watir)
 
 
 Test your Silverlight application
@@ -867,7 +864,7 @@ Test your Silverlight application
 These techniques can also be used to test Silverlight applications, even if
 they are written in a static language.
 
-TODO!!
+<show calculator>
 
 
 Hosting
@@ -1004,9 +1001,9 @@ and a ScriptScope.
 Extending an actual application with scripts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-TODO!
+TODO write-up!
 
-
+<show sketchscript in browser>
 
 
 
