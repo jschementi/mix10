@@ -125,8 +125,7 @@ ACT III
 Introduction
 ------------
 Welcome to "Pumping Iron" on the web! I'm Jimmy Schementi, program manager of
-IronRuby and IronPython at Microsoft, lead dev on "Gestalt" - the Silverlight
-DLR integration, as well as everything else web-related with the "Iron" languages.
+IronRuby and IronPython at Microsoft, and DLR integration for everything web-related.
 Today I'll be talking about how you can embrace dynamic languages on Microsoft's
 web platform - be it on the web-server (IIS) or in the web-browser (Silverlight),
 and even in your existing applications.
@@ -185,15 +184,15 @@ Application development with dynamic languages
 Ruby and Python can be used both on IIS as well as in Silverlight to build apps
 from start to finish; let's first look at the server.
 
-Both languages can run on the same infrastructure as your ASP.NET apps, making
-deploying them no different than any other ASP.NET app. And, because IronRuby
-is a highly-compatible implementation of the Ruby language, it is able to run
-applications written with the "Ruby on Rails" web-framework, and also supports
-deploying on IIS.
-
 Server-side: IIS
 ++++++++++++++++
 *Ruby on IIS (running Rails and other Ruby frameworks)*
+
+Both languages can run on the same infrastructure as your ASP.NET apps, making
+deploying them no different than any other ASP.NET app. And, because IronRuby
+is a highly-compatible implementation of the Ruby language, it is able to run
+applications written with Ruby-based web-framework, such as "Ruby on Rails",
+and also supports deploying on IIS.
 
 Sinatra + Ruby/Python 101
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -226,10 +225,11 @@ is implicitly the return value of the method.
 Though these features sound kinda arbitrary by themselves, if I were to
 write this with non-Ruby language features, it would lose it's character::
 
-    def index()
-      return "Hello, World"
+    def verbose()
+      return "Verbose, World"
     end
-    get('/', method('index'))
+    get('/', method('verbose'))
+
 
 This defines a Ruby method "index", which explicitly returns the string
 "Hello, World", and then calls the get method directly with the first
@@ -276,6 +276,8 @@ pointer is much cleaner than Ruby ('index' vs 'method(:index)');
 in Ruby 'index' would call the method, since Ruby allows method
 calls with or without parens, where Python uses parens to indicate
 a method call.
+
+<Show it running on IIS>
 
 <start http://ironruby.info>
 
